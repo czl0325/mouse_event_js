@@ -9,6 +9,7 @@
 | el | 需要响应鼠标事件的html元素 | HTMLElement | - |
 | clickHandler | 单击事件的回调函数 | (event: MouseEvent)=>void | - |
 | dbClickHandler | 双击事件的回调函数 | (event: MouseEvent)=>void | - |
+
 <br><br>
 
 #### useMouseRightDbClick 鼠标右键双击事件
