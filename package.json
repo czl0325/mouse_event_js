@@ -1,0 +1,32 @@
+{
+  "name": "mouse_event_js",
+  "version": "1.0.0",
+  "private": false,
+  "description": "鼠标的单击双击事件，右键双击事件的hook",
+  "main": "lib/mouse.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "鼠标",
+    "mouse"
+  ],
+  "author": "陈昭良",
+  "homepage": "https://github.com/czl0325/mouse_event_js",
+  "bugs": {
+    "url": "https://github.com/czl0325/mouse_event_js/issues"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "vue": "^3.4.31"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  }
+}
