@@ -1,14 +1,16 @@
 {
   "name": "mouse_event_js",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": false,
   "description": "鼠标的单击双击事件，右键双击事件的hook",
+  "type": "module",
   "main": "lib/mouse.ts",
+  "types": "dist/mouse.d.ts",
   "scripts": {
     "build": "tsc"
   },
   "files": [
-    "dist",
+    "dist/*.*",
     "README.md",
     "LICENSE"
   ],
@@ -27,6 +29,6 @@
     "vue": "^3.4.31"
   },
   "peerDependencies": {
-    "vue": "^3.0.0"
+    "vue": ">=3.0.0"
   }
 }

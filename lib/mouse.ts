@@ -42,7 +42,7 @@ export const useMouseEvent = (el: HTMLElement, clickHandler: (event: MouseEvent)
   })
 }
 
-export default function useMouseRightDbClick(el: HTMLElement, callback: (e: MouseEvent) => void) {
+export const useMouseRightDbClick = (el: HTMLElement, callback: (e: MouseEvent) => void) => {
   let lastClickTime = 0
   let clickCount = 0
   const mouseUpEvent = new MouseEvent('mouseup', {

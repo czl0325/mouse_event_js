@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>测试mouse_event_js</title>
+</head>
+<body>
+  <div id="testDiv" style="width: 200px;height: 200px;background-color: red"></div>
+  <button id="btn">删除div</button>
+</body>
+<script type="module">
+  import { useMouseEvent, useMouseRightDbClick } from "./lib/mouse.js"
+  const div = document.getElementById('testDiv')
+  const btn = document.getElementById('btn')
+  useMouseEvent(div, (event) => {
+    console.log("单击事件")
+  }, (event) => {
+    console.log("双击事件")
+  })
+  useMouseRightDbClick(div, (event) => {
+    console.log("右键双击事件")
+  })
+  btn.addEventListener('click', () => {
+    div.remove()
+  })
+</script>
+</html>
